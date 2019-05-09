@@ -1,8 +1,14 @@
 // Get references to page elements
 var $exampleText = $("#example-text");
 var $exampleDescription = $("#example-description");
-var $submitBtn = $("#submit");
 var $exampleList = $("#example-list");
+
+$("#logout").on("click", function() {
+  return $.ajax({
+    url: "/logout",
+    type: "GET"
+  });
+});
 
 // The API object contains methods for each kind of request we'll make
 var API = {
@@ -14,12 +20,6 @@ var API = {
       type: "POST",
       url: "api/examples",
       data: JSON.stringify(example)
-    });
-  },
-  getExamples: function() {
-    return $.ajax({
-      url: "api/examples",
-      type: "GET"
     });
   },
   deleteExample: function(id) {
@@ -44,12 +44,6 @@ var refreshExamples = function() {
           "data-id": example.id
         })
         .append($a);
-
-      var $button = $("<button>")
-        .addClass("btn btn-danger float-right delete")
-        .text("ｘ");
-
-      $li.append($button);
 
       return $li;
     });
@@ -95,5 +89,4 @@ var handleDeleteBtnClick = function() {
 };
 
 // Add event listeners to the submit and delete buttons
-$submitBtn.on("click", handleFormSubmit);
 $exampleList.on("click", ".delete", handleDeleteBtnClick);
