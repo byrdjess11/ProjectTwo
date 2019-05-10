@@ -10,6 +10,9 @@ $("#logout").on("click", function() {
   });
 });
 
+var username = $(".text").val();
+console.log(username);
+
 // The API object contains methods for each kind of request we'll make
 var API = {
   saveExample: function(example) {
