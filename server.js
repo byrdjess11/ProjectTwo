@@ -13,15 +13,23 @@ var PORT = process.env.PORT || 3000;
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 app.use(express.static("public"));
+
 //Body Parser
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
+
 // Passport
 app.use(
   session({ secret: "keyboard cat", resave: true, saveUninitialized: true })
 );
 app.use(passport.initialize());
 app.use(passport.session());
+
+// Spotify
+var keys = require("./keys");
+var Spotify = require("node-spotify-api");
+// Initialize the spotify API client using our client id and secret
+new Spotify(keys.spotify);
 
 // Handlebars
 app.engine(
@@ -46,8 +54,8 @@ if (process.env.NODE_ENV === "test") {
 }
 
 // Starting the server, syncing our models ------------------------------------/
-models.sequelize.sync(syncOptions).then(function() {
-  app.listen(PORT, function() {
+models.sequelize.sync(syncOptions).then(function () {
+  app.listen(PORT, function () {
     console.log(
       "==> 🌎🌎 Listening on port %s. Visit http://localhost:%s/ in your browser.",
       PORT,
