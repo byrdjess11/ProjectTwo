@@ -16,7 +16,7 @@ exports.login = function(req, res) {
   res.redirect(
     "https://accounts.spotify.com/authorize" +
       "?client_id=5104ecefda2f414b9f0c237eac499717" +
-      "&redirect_uri=http://localhost:3000/callback" +
+      "&redirect_uri=http:%2F%2Flocalhost:3000%2Fcallback&" +
       "callback&scope=user-read-private%20user-read-email&response_type=token&state=123"
   );
 };
