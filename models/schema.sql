@@ -1,3 +1,8 @@
 DROP DATABASE IF EXISTS projectTwo;
 CREATE DATABASE projectTwo;
 
+CREATE TABLE profiles {
+    id INT AUTO_INCREMENT,
+    name VARCHAR NOT NULL,
+    PRIMARY KEY (id)
+};
