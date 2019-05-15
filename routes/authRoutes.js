@@ -1,9 +1,12 @@
+/* eslint-disable camelcase */
 var authController = require("../controllers/authController");
 
 module.exports = function(app, passport) {
   app.get("/signup", authController.signup);
 
   app.get("/signin", authController.signin);
+
+  app.get("/login", authController.login);
 
   app.post(
     "/signup",

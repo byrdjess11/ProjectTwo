@@ -11,6 +11,7 @@
   },
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.18.0",
     "bcrypt-nodejs": "0.0.3",
     "body-parser": "^1.19.0",
     "dotenv": "^6.0.0",
@@ -18,8 +19,10 @@
     "express-handlebars": "^3.0.0",
     "express-session": "^1.16.1",
     "mysql2": "^1.6.4",
+    "node-spotify-api": "^1.1.1",
     "passport": "^0.4.0",
     "passport-local": "^1.0.0",
+    "passport-spotify": "^1.0.1",
     "sequelize": "^5.8.5"
   },
   "devDependencies": {
