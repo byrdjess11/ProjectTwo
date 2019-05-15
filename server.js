@@ -4,6 +4,7 @@ var models = require("./models");
 var exphbs = require("express-handlebars");
 var session = require("express-session");
 var bodyParser = require("body-parser");
+var axios = require("axios");
 var app = express();
 var passport = require("passport");
 require("./config/passport/passport")(passport, models.user);
@@ -26,7 +27,7 @@ app.use(passport.initialize());
 app.use(passport.session());
 
 // Spotify
-var keys = require("./keys");
+var keys = require("./config/spotify/keys");
 var Spotify = require("node-spotify-api");
 // Initialize the spotify API client using our client id and secret
 new Spotify(keys.spotify);
@@ -54,8 +55,8 @@ if (process.env.NODE_ENV === "test") {
 }
 
 // Starting the server, syncing our models ------------------------------------/
-models.sequelize.sync(syncOptions).then(function () {
-  app.listen(PORT, function () {
+models.sequelize.sync(syncOptions).then(function() {
+  app.listen(PORT, function() {
     console.log(
       "==> 🌎🌎 Listening on port %s. Visit http://localhost:%s/ in your browser.",
       PORT,
