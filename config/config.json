@@ -1,14 +1,14 @@
 {
   "development": {
     "username": "root",
-    "password": "RollshopshoreSQL",
+    "password": "tristan9014219",
     "database": "projectTwo",
     "host": "localhost",
     "dialect": "mysql"
   },
   "test": {
     "username": "root",
-    "password": "RollshopshoreSQL",
+    "password": "tristan9014219",
     "database": "projectTwo",
     "host": "localhost",
     "dialect": "mysql",
