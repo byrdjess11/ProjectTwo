@@ -22,6 +22,7 @@ exports.login = function(req, res) {
 };
 
 exports.logout = function(req, res) {
+  // eslint-disable-next-line no-unused-vars
   req.session.destroy(function(err) {
     res.redirect("/signin");
   });
