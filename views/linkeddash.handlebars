@@ -1,23 +1,24 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Your Dashboard</title>
-</head>
-
-<body>
-
-    <div class='container'>
-        <div class='row'>
-            <div class='col-12'>
-                <h1>This page will display your dashboard after you've been redirected back from the spotify authorization. Here you will links to your playlists, friends, and people you've matched with based on similar music tastes.</h1>
-            </div>
-        </div>
+  <nav id="navBar">
+    <div class="nav-wrapper">
+      <a href="userPage.html" style="text-shadow: 3px 3px black" class="brand-logo center">Spot-A-Friend<i class="material-icons right">people</i></a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="">About</a></li>
+        <li><a href="">My Profile</a></li>
+        <li><form id="signin" method="get" action="/logout">
+                                    <input class="btn grey lighten-5 black-text modal-trigger" type="submit" value="Sign Out" />
+                                    </form></li>
+      </ul>
     </div>
+  </nav>
 
-</body>
+  <div id="topMatches" class="container">
+    <h6>Top 3 Spot-A-Friend Matches</h6>
+  </div>
 
-</html>
+  <div id="musicProf" class="container">
+    <h6>My Music Profile</h6>
+  </div>
+
+  <div id="userPlaylist" class="container">
+    <h6>Favorite Songs Playlist</h6>
+  </div>
