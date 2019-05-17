@@ -8,6 +8,14 @@ module.exports = function(app, passport) {
 
   app.get("/login", authController.login);
 
+  app.get("/auth/dashboard", authController.linkedDash);
+
+  app.get("/auth/playlists", authController.linkedLists);
+
+  app.get("/auth/friends", authController.linkedFriends);
+
+  app.get("/auth/matches", authController.linkedMatches);
+
   app.post(
     "/signup",
     passport.authenticate("local-signup", {
