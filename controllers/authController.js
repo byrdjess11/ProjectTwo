@@ -16,9 +16,26 @@ exports.login = function(req, res) {
   res.redirect(
     "https://accounts.spotify.com/authorize" +
       "?client_id=5104ecefda2f414b9f0c237eac499717" +
-      "&redirect_uri=http:%2F%2Flocalhost:3000%2Fcallback&" +
-      "callback&scope=user-read-private%20user-read-email&response_type=token&state=123"
+      "&scope=user-read-private%20user-read-email" +
+      "&redirect_uri=http:localhost:3000/auth/dashboard" +
+      "&nosignup=true&nolinks=true&show_dialog=true&response_type=token"
   );
+};
+
+exports.linkedDash = function(req, res) {
+  res.render("linkeddash");
+};
+
+exports.linkedLists = function(req, res) {
+  res.render("linkedlists");
+};
+
+exports.linkedFriends = function(req, res) {
+  res.render("linkedfriends");
+};
+
+exports.linkedMatches = function(req, res) {
+  res.render("linkedmatches");
 };
 
 exports.logout = function(req, res) {
