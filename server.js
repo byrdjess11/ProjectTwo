@@ -30,7 +30,10 @@ app.use(passport.session());
 var keys = require("./config/spotify/keys");
 var Spotify = require("node-spotify-api");
 // Initialize the spotify API client using our client id and secret
-new Spotify(keys.spotify);
+new Spotify({
+  id: "5104ecefda2f414b9f0c237eac499717",
+  secret: "45a8e0dd9ba142e293a8501a22943b71"
+});
 
 // Handlebars
 app.engine(
