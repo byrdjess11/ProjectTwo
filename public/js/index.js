@@ -110,3 +110,4 @@ $("#signup").click(function() {
 handleFormSubmit();
 
 });
+
