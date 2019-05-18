@@ -93,3 +93,21 @@ var handleDeleteBtnClick = function() {
 
 // Add event listeners to the submit and delete buttons
 $exampleList.on("click", ".delete", handleDeleteBtnClick);
+
+// UI jquery
+
+$(document).ready(function(){
+  $(".modal").modal();
+});
+
+
+$(document).ready(function(){
+  $(".carousel").carousel();
+});
+
+$("#signup").click(function() {
+  
+handleFormSubmit();
+
+});
+

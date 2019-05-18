@@ -1,28 +1,221 @@
-<!DOCTYPE html>
-<html lang="en">
+<header>
+      
+        <div class="row title center" href="#one!">
+               
+        <div class="row">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Sign Up</title>
-</head>
+            <h1>
+                <span>S</span>
+                <span>p</span>
+                <span>o</span>
+                <span>t</span>
+                <span>-</span>
+                <span>A</span>
+                <span>-</span>
+                <span>F</span>
+                <span>r</span>
+                <span>i</span>
+                <span>e</span>
+                <span>n</span>
+                <span>d</span>
+            </h1>
 
-<body>
+        </div>
 
-    <h1>Sign Up</h1>
-    <form id="signup" name="signup" method="post" action="/signup">
-        <label for="username">Username</label>
-        <input id="username" name="username" type="text" />
-        <label for="password">Password</label>
-        <input name="password" type="password" />
-        <input class="btn" type="submit" value="Sign Up" />
-    </form>
-    <form id="signin" method="get" action="/signin">
-        <input class="btn" type="submit" value="Go to Sign In" />
-    </form>
+        </div> 
+     
+    </header>
 
 
-</body>
+<div class="row center" id="userLogin">
+        
+    <div class="col s9" id="info">
 
-</html>
+                
+    <div class="carousel">
+
+        <a class="carousel-item white" href="#one!"><i class="material-icons">headset</i></a>
+        <a class="carousel-item white" href="#two!"><i class="material-icons">playlist_add</i></a>
+        <a class="carousel-item white" href="#three!"><i class="material-icons">people</i></a>
+        <a class="carousel-item white" href="#four!"><i class="material-icons">devices</i></a>
+        <a class="carousel-item white" href="#five!"><i class="material-icons">event_available</i></a>
+
+    </div>
+               
+    </div>
+           
+
+
+    <div class="col s3" id="createAccount">
+
+    <p class="center">Login</p>
+
+    <div class="container center">
+
+    <div class="row">
+
+            <div class="input-field col s12">
+
+
+            <form id="signin" method="get" action="/login">
+                <label for="username">Username</label>
+                <input id="username" name="username" type="text" />
+                <label for="password">Password</label>
+                <input name="password" type="password" />
+                <input class="btn grey lighten-5 black-text" type="submit" value="Sign In" />
+                <input href="#signUp" type="submit" class="btn grey lighten-5 black-text modal-trigger" value="Sign Up">
+            </form>
+
+        
+            </div>
+    </div>
+</div>
+    
+                            
+
+    
+
+                
+<div class="modal" id="signUp">
+                                        
+    <div class="row modal-content">
+        <form class="col s12">  
+
+            <div class="row">
+                <div class="input-field col s6">
+                    <input id="first_name" type="text" class="validate">
+                    <label for="first_name">First Name</label>
+                </div>
+
+                <div class="input-field col s6">
+                    <input id="last_name" type="text" class="validate">
+                    <label for="last_name">Last Name</label>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="input-field col s12">
+                    <input id="email" type="text" class="validate">
+                    <label for="email">User Name</label>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="input-field col s12">
+                    <input id="password" type="password" class="validate">
+                    <label for="password">Password</label>
+                </div>
+            </div>
+
+            <div class="row">
+                <h5>
+                    Scaling from 1 to 5, 5 being your favorite, rate the following music genres.
+                </h5>                                                             
+   
+                <div id="test-slider">                                                                
+                    <form action="#">
+                        <p class="range-field">
+                        Pop
+                        <input type="range" id="test5" min="1" max="5" />
+                         </p>
+                    </form>
+
+                    <form action="#">
+                        <p class="range-field">
+                        Hip-Hop
+                        <input type="range" id="test5" min="1" max="5" />
+                        </p>
+                    </form>
+
+                    <form action="#">
+                        <p class="range-field">
+                        R&B
+                        <input type="range" id="test5" min="1" max="5" />
+                        </p>
+                    </form>
+
+                    <form action="#">
+                        <p class="range-field">
+                        Rap
+                        <input type="range" id="test5" min="1" max="5" />
+                        </p>
+                    </form>
+
+                    <form action="#">
+                        <p class="range-field">
+                        Country
+                        <input type="range" id="test5" min="1" max="5" />
+                        </p>
+                    </form>
+
+                    <form action="#">
+                        <p class="range-field">
+                        Indie
+                        <input type="range" id="test5" min="1" max="5" />
+                        </p>
+                    </form>
+
+                    <form action="#">
+                        <p class="range-field">
+                        Rock
+                        <input type="range" id="test5" min="1" max="5" />
+                        </p>
+                    </form>
+
+                    <form action="#">
+                        <p class="range-field">
+                        Electronic
+                        <input type="range" id="test5" min="1" max="5" />
+                        </p>
+                    </form>
+
+                     <form action="#">
+                        <p class="range-field">
+                        Punk
+                        <input type="range" id="test5" min="1" max="5" />
+                        </p>
+                     </form>
+
+                    <form action="#">
+                        <p class="range-field">
+                        Folk
+                        <input type="range" id="test5" min="1" max="5" />
+                        </p>
+                    </form>
+
+                <form id="signup" method="get" action="/login">
+                <input class="btn grey lighten-5 black-text" type="submit" value="Sign In"/>
+                </form>
+          
+    </div>
+</div>
+                                                                    
+                                                
+                                                        
+
+
+                                
+                          
+                        </div>
+                </div>
+                                    
+           
+            </div>
+
+        </div>
+
+    
+
+
+    <div class="row white-text" id="video">
+    
+        <video autoplay muted loop id="myVideo">
+            <source src="/images/concerttwo.mp4" type="video/mp4">
+        </video>
+
+        <row class="content">
+            <h2>Share your favorite artists and playlists.</h2>
+            <h5>Connect with friends.</h5>
+        </row>
+
+    </div>

@@ -1,4 +1,175 @@
-.list-group-item {
-  line-height: 2.5;
+#login {
+  display: none;
 }
+
+#loggedin {
+  display: none;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color:white;
+  margin: 0px;
+}  
+
+header {
+  position: relative;
+  height: 100px;
+  width: 100%;
+  background-image: linear-gradient(white,rgba(116, 19, 116, 0.13));
+  color:rgb(5, 5, 5);
+  margin: 0px;
+  position: relative;
+}
+
+h1 {
+    position: absolute;
+    top: 15px;
+    left: 80px;
+    margin: 0px;
+    font-size: 55px;
+    font-family: 'Unica One', cursive;
+    font-weight: bolder;
+}
+
+#userLogin {
+  position: relative;
+  height: 350px;
+  width: 100%;
+  margin: 0px;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.89);
+  color: white;
+}
+.material-icons {
+  font-size: 60px;
+  color:  #73AD21;
+}
+
+.btn {
+
+  border-radius: 25px;
+  border: 2px solid #73AD21;
+
+}
+
+
+#info {
+
+background-color: rgba(56, 43, 173, 0.308);
+height: 350px;
+
+}
+
+#createAccount {
+
+background-color: white;
+height: 350px;
+font-size: 10px;
+color: black;
+
+}
+
+p {
+color: #73AD21;
+font-size: 22px;
+}
+
+.modal {
+height: 400px;
+width: 700px;
+}
+#video {
+  position: relative;
+  max-height: 400px;
+  width: 100%;
+  overflow: hidden;
+  background-color: black;
+  margin: 0px;
+}
+
+#myVideo {
+width: 100%;
+}
+
+.content {
+position: absolute;
+top: 0;
+background: rgba(0, 0, 0, 0.5);
+color: #f1f1f1;
+width: 100%;
+height: 400px;
+padding: 0px;
+}
+
+#navBar {
+  background-color: #73ad2d;
+  font-family: 'Unica One', cursive;
+  /* text-shadow: 2px 2px black;  */
+  
+  outline: 2px solid black
+}
+
+#signoutBtn {
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+  
+  /* text-shadow: 1px 1px black;  */
+}
+
+
+#topMatches {
+background-color: white;
+border-radius: 25px;
+width: 250px;
+height: 600px;
+margin-top: 75px;
+margin-left: 100px;
+float: left;
+text-align: center;
+padding-top: 10px;
+border-style: ridge;
+border-color: #73ad2d;
+border-width: 14px;
+box-shadow: 5px 10px black;
+} 
+
+#musicProf {
+background-color: white;
+border-radius: 25px;
+width: 500px;
+height: 600px;
+margin-top: 75px;
+float: center;
+text-align: center;
+padding-top: 10px;
+border: 4px solid #73ad2d;
+box-shadow: 5px 10px black;
+} 
+
+#userPlaylist {
+background-color: white;
+border-radius: 25px;
+width: 250px;
+height: 600px;
+margin-top: -600px;
+margin-right: 100px;
+float: right;
+text-align: center;
+padding-top: 10px;
+border-style: ridge;
+border-color: #73ad2d;
+border-width: 14px;
+box-shadow: 5px 10px black;
+}
+
+h6 {
+font-family: 'Fjalla One', sans-serif;
+font-size: 45px;
+}
+
+
+
+
 
